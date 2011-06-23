@@ -1,4 +1,4 @@
-1308801839
+1308804817
 Application	C:/Projects/RoR/depot/config/application.rb	  class Application 
 ApplicationController	C:/Projects/RoR/depot/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Projects/RoR/depot/app/helpers/application_helper.rb	module ApplicationHelper
@@ -138,6 +138,7 @@ merge	C:/Projects/RoR/depot/public/javascripts/prototype.js	function merge(objec
 methodize	C:/Projects/RoR/depot/public/javascripts/prototype.js	function methodize()
 min	C:/Projects/RoR/depot/public/javascripts/prototype.js	function min(iterator, context)
 new	C:/Projects/RoR/depot/app/controllers/products_controller.rb	  def new
+new_product	C:/Projects/RoR/depot/test/unit/product_test.rb	  def new_product(image_url)
 observe	C:/Projects/RoR/depot/public/javascripts/prototype.js	function observe(element, eventName, handler)
 on	C:/Projects/RoR/depot/public/javascripts/prototype.js	function on(element, eventName, selector, callback)
 parseColor	C:/Projects/RoR/depot/public/javascripts/effects.js	function parseColor(color)
