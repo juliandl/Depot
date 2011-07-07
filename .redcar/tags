@@ -1,16 +1,36 @@
-1308804817
+1310005264
+AddQuantityToLineItems	C:/Projects/RoR/depot/db/migrate/20110706034606_add_quantity_to_line_items.rb	class AddQuantityToLineItems 
 Application	C:/Projects/RoR/depot/config/application.rb	  class Application 
 ApplicationController	C:/Projects/RoR/depot/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Projects/RoR/depot/app/helpers/application_helper.rb	module ApplicationHelper
 BrowsingTest	C:/Projects/RoR/depot/test/performance/browsing_test.rb	class BrowsingTest 
+Cart	C:/Projects/RoR/depot/app/models/cart.rb	class Cart 
+CartTest	C:/Projects/RoR/depot/test/unit/cart_test.rb	class CartTest 
+CartsController	C:/Projects/RoR/depot/app/controllers/carts_controller.rb	class CartsController 
+CartsControllerTest	C:/Projects/RoR/depot/test/functional/carts_controller_test.rb	class CartsControllerTest 
+CartsHelper	C:/Projects/RoR/depot/app/helpers/carts_helper.rb	module CartsHelper
+CartsHelperTest	C:/Projects/RoR/depot/test/unit/helpers/carts_helper_test.rb	class CartsHelperTest 
+CombineItemsInCart	C:/Projects/RoR/depot/db/migrate/20110706040052_combine_items_in_cart.rb	class CombineItemsInCart 
+CreateCarts	C:/Projects/RoR/depot/db/migrate/20110630030532_create_carts.rb	class CreateCarts 
+CreateLineItems	C:/Projects/RoR/depot/db/migrate/20110630031116_create_line_items.rb	class CreateLineItems 
 CreateProducts	C:/Projects/RoR/depot/db/migrate/20110623032041_create_products.rb	class CreateProducts 
 Depot	C:/Projects/RoR/depot/config/application.rb	module Depot
+LineItem	C:/Projects/RoR/depot/app/models/line_item.rb	class LineItem 
+LineItemTest	C:/Projects/RoR/depot/test/unit/line_item_test.rb	class LineItemTest 
+LineItemsControllerTest	C:/Projects/RoR/depot/app/controllers/line_items_controller.rb	class LineItemsControllerTest 
+LineItemsControllerTest	C:/Projects/RoR/depot/test/functional/line_items_controller_test.rb	class LineItemsControllerTest 
+LineItemsHelper	C:/Projects/RoR/depot/app/helpers/line_items_helper.rb	module LineItemsHelper
+LineItemsHelperTest	C:/Projects/RoR/depot/test/unit/helpers/line_items_helper_test.rb	class LineItemsHelperTest 
 Product	C:/Projects/RoR/depot/app/models/product.rb	class Product 
 ProductTest	C:/Projects/RoR/depot/test/unit/product_test.rb	class ProductTest 
 ProductsController	C:/Projects/RoR/depot/app/controllers/products_controller.rb	class ProductsController 
 ProductsControllerTest	C:/Projects/RoR/depot/test/functional/products_controller_test.rb	class ProductsControllerTest 
 ProductsHelper	C:/Projects/RoR/depot/app/helpers/products_helper.rb	module ProductsHelper
 ProductsHelperTest	C:/Projects/RoR/depot/test/unit/helpers/products_helper_test.rb	class ProductsHelperTest 
+StoreController	C:/Projects/RoR/depot/app/controllers/store_controller.rb	class StoreController 
+StoreControllerTest	C:/Projects/RoR/depot/test/functional/store_controller_test.rb	class StoreControllerTest 
+StoreHelper	C:/Projects/RoR/depot/app/helpers/store_helper.rb	module StoreHelper
+StoreHelperTest	C:/Projects/RoR/depot/test/unit/helpers/store_helper_test.rb	class StoreHelperTest 
 Str	C:/Projects/RoR/depot/public/javascripts/prototype.js	function Str(key, holder, stack)
 TestCase	C:/Projects/RoR/depot/test/test_helper.rb	class ActiveSupport::TestCase
 Type	C:/Projects/RoR/depot/public/javascripts/prototype.js	function Type(o)
@@ -18,6 +38,7 @@ abs	C:/Projects/RoR/depot/public/javascripts/prototype.js	function abs()
 absolutize	C:/Projects/RoR/depot/public/javascripts/prototype.js	function absolutize(element)
 addMethods	C:/Projects/RoR/depot/public/javascripts/prototype.js	function addMethods(source)
 addText	C:/Projects/RoR/depot/public/javascripts/controls.js	function addText(mode, condition)
+add_product	C:/Projects/RoR/depot/app/models/cart.rb	  def add_product(product_id)
 all	C:/Projects/RoR/depot/public/javascripts/prototype.js	function all(iterator, context)
 any	C:/Projects/RoR/depot/public/javascripts/prototype.js	function any(iterator, context)
 argumentNames	C:/Projects/RoR/depot/public/javascripts/prototype.js	function argumentNames()
@@ -37,29 +58,38 @@ collect	C:/Projects/RoR/depot/public/javascripts/prototype.js	function collect(i
 compact	C:/Projects/RoR/depot/public/javascripts/prototype.js	function compact()
 concat	C:/Projects/RoR/depot/public/javascripts/prototype.js	function concat()
 copy	C:/Projects/RoR/depot/public/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
+create	C:/Projects/RoR/depot/app/controllers/carts_controller.rb	  def create
 create	C:/Projects/RoR/depot/app/controllers/products_controller.rb	  def create
 create	C:/Projects/RoR/depot/public/javascripts/prototype.js	function create()
 cssNameFor	C:/Projects/RoR/depot/public/javascripts/prototype.js	function cssNameFor(key)
 cumulativeOffset	C:/Projects/RoR/depot/public/javascripts/prototype.js	function cumulativeOffset(element)
 cumulativeScrollOffset	C:/Projects/RoR/depot/public/javascripts/prototype.js	function cumulativeScrollOffset(element)
+current_cart	C:/Projects/RoR/depot/app/controllers/application_controller.rb	  def current_cart
 curry	C:/Projects/RoR/depot/public/javascripts/prototype.js	function curry()
 dasherize	C:/Projects/RoR/depot/public/javascripts/prototype.js	function dasherize()
 defer	C:/Projects/RoR/depot/public/javascripts/prototype.js	function defer()
 define	C:/Projects/RoR/depot/public/javascripts/prototype.js	function define(D)
 delay	C:/Projects/RoR/depot/public/javascripts/prototype.js	function delay(timeout)
+destroy	C:/Projects/RoR/depot/app/controllers/carts_controller.rb	  def destroy
 destroy	C:/Projects/RoR/depot/app/controllers/products_controller.rb	  def destroy
 detect	C:/Projects/RoR/depot/public/javascripts/prototype.js	function detect(iterator, context)
 dirCheck	C:/Projects/RoR/depot/public/javascripts/prototype.js	function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dirNodeCheck	C:/Projects/RoR/depot/public/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
 dispatch	C:/Projects/RoR/depot/public/javascripts/effects.js	function dispatch(effect, eventName)
 down	C:/Projects/RoR/depot/db/migrate/20110623032041_create_products.rb	  def self.down
+down	C:/Projects/RoR/depot/db/migrate/20110630030532_create_carts.rb	  def self.down
+down	C:/Projects/RoR/depot/db/migrate/20110630031116_create_line_items.rb	  def self.down
+down	C:/Projects/RoR/depot/db/migrate/20110706034606_add_quantity_to_line_items.rb	  def self.down
+down	C:/Projects/RoR/depot/db/migrate/20110706040052_combine_items_in_cart.rb	  def self.down
 each	C:/Projects/RoR/depot/public/javascripts/prototype.js	function each(iterator)
 each	C:/Projects/RoR/depot/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	C:/Projects/RoR/depot/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
+edit	C:/Projects/RoR/depot/app/controllers/carts_controller.rb	  def edit
 edit	C:/Projects/RoR/depot/app/controllers/products_controller.rb	  def edit
 element	C:/Projects/RoR/depot/public/javascripts/prototype.js	function element(event)
 empty	C:/Projects/RoR/depot/public/javascripts/prototype.js	function empty()
 endsWith	C:/Projects/RoR/depot/public/javascripts/prototype.js	function endsWith(pattern)
+ensure_not_referenced_by_any_line_item	C:/Projects/RoR/depot/app/models/product.rb	  def ensure_not_referenced_by_any_line_item
 escapeHTML	C:/Projects/RoR/depot/public/javascripts/prototype.js	function escapeHTML()
 evalJSON	C:/Projects/RoR/depot/public/javascripts/prototype.js	function evalJSON(sanitize)
 evalScripts	C:/Projects/RoR/depot/public/javascripts/prototype.js	function evalScripts()
@@ -88,11 +118,14 @@ grep	C:/Projects/RoR/depot/public/javascripts/prototype.js	function grep(filter,
 gsub	C:/Projects/RoR/depot/public/javascripts/prototype.js	function gsub(pattern, replacement)
 handleMethod	C:/Projects/RoR/depot/public/javascripts/rails.js	function handleMethod(element)
 handleRemote	C:/Projects/RoR/depot/public/javascripts/rails.js	function handleRemote(element)
+hidden_div_if	C:/Projects/RoR/depot/app/helpers/application_helper.rb	  def hidden_div_if(condition, attributes = {}, &block)
 inGroupsOf	C:/Projects/RoR/depot/public/javascripts/prototype.js	function inGroupsOf(number, fillWith)
 include	C:/Projects/RoR/depot/public/javascripts/prototype.js	function include(object)
 include	C:/Projects/RoR/depot/public/javascripts/prototype.js	function include(pattern)
 include	C:/Projects/RoR/depot/public/javascripts/prototype.js	function include(value)
+index	C:/Projects/RoR/depot/app/controllers/carts_controller.rb	  def index
 index	C:/Projects/RoR/depot/app/controllers/products_controller.rb	  def index
+index	C:/Projects/RoR/depot/app/controllers/store_controller.rb	  def index
 index	C:/Projects/RoR/depot/public/javascripts/prototype.js	function index(value)
 indexOf	C:/Projects/RoR/depot/public/javascripts/prototype.js	function indexOf(item, i)
 initialize	C:/Projects/RoR/depot/public/javascripts/prototype.js	function initialize(object)
@@ -137,6 +170,7 @@ merge	C:/Projects/RoR/depot/public/javascripts/prototype.js	function merge(array
 merge	C:/Projects/RoR/depot/public/javascripts/prototype.js	function merge(object)
 methodize	C:/Projects/RoR/depot/public/javascripts/prototype.js	function methodize()
 min	C:/Projects/RoR/depot/public/javascripts/prototype.js	function min(iterator, context)
+new	C:/Projects/RoR/depot/app/controllers/carts_controller.rb	  def new
 new	C:/Projects/RoR/depot/app/controllers/products_controller.rb	  def new
 new_product	C:/Projects/RoR/depot/test/unit/product_test.rb	  def new_product(image_url)
 observe	C:/Projects/RoR/depot/public/javascripts/prototype.js	function observe(element, eventName, handler)
@@ -160,6 +194,7 @@ scan	C:/Projects/RoR/depot/public/javascripts/prototype.js	function scan(pattern
 select	C:/Projects/RoR/depot/public/javascripts/prototype.js	function select()
 select	C:/Projects/RoR/depot/public/javascripts/prototype.js	function select(selector, scope)
 set	C:/Projects/RoR/depot/public/javascripts/prototype.js	function set(key, value)
+show	C:/Projects/RoR/depot/app/controllers/carts_controller.rb	  def show
 show	C:/Projects/RoR/depot/app/controllers/products_controller.rb	  def show
 size	C:/Projects/RoR/depot/public/javascripts/prototype.js	function size()
 size	C:/Projects/RoR/depot/public/javascripts/prototype.js	function size()
@@ -194,6 +229,9 @@ toQueryPair	C:/Projects/RoR/depot/public/javascripts/prototype.js	function toQue
 toQueryParams	C:/Projects/RoR/depot/public/javascripts/prototype.js	function toQueryParams(separator)
 toQueryString	C:/Projects/RoR/depot/public/javascripts/prototype.js	function toQueryString()
 toQueryString	C:/Projects/RoR/depot/public/javascripts/prototype.js	function toQueryString(object)
+total_items	C:/Projects/RoR/depot/app/models/cart.rb	  def total_items
+total_price	C:/Projects/RoR/depot/app/models/cart.rb	  def total_price
+total_price	C:/Projects/RoR/depot/app/models/line_item.rb	  def total_price
 truncate	C:/Projects/RoR/depot/public/javascripts/prototype.js	function truncate(length, truncation)
 underscore	C:/Projects/RoR/depot/public/javascripts/prototype.js	function underscore()
 unescapeHTML	C:/Projects/RoR/depot/public/javascripts/prototype.js	function unescapeHTML()
@@ -201,6 +239,11 @@ unfilterJSON	C:/Projects/RoR/depot/public/javascripts/prototype.js	function unfi
 uniq	C:/Projects/RoR/depot/public/javascripts/prototype.js	function uniq(sorted)
 unset	C:/Projects/RoR/depot/public/javascripts/prototype.js	function unset(key)
 up	C:/Projects/RoR/depot/db/migrate/20110623032041_create_products.rb	  def self.up
+up	C:/Projects/RoR/depot/db/migrate/20110630030532_create_carts.rb	  def self.up
+up	C:/Projects/RoR/depot/db/migrate/20110630031116_create_line_items.rb	  def self.up
+up	C:/Projects/RoR/depot/db/migrate/20110706034606_add_quantity_to_line_items.rb	  def self.up
+up	C:/Projects/RoR/depot/db/migrate/20110706040052_combine_items_in_cart.rb	  def self.up
+update	C:/Projects/RoR/depot/app/controllers/carts_controller.rb	  def update
 update	C:/Projects/RoR/depot/app/controllers/products_controller.rb	  def update
 update	C:/Projects/RoR/depot/public/javascripts/prototype.js	function update(array, args)
 update	C:/Projects/RoR/depot/public/javascripts/prototype.js	function update(element, content)
